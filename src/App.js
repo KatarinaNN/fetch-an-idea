@@ -12,7 +12,6 @@ function App() {
   const getAdvice = async() => {
     const response = await fetch (`http://www.boredapi.com/api/activity/`);
     const data = await response.json();
-    console.log(data.activity);
     setAdvice(data.activity);
         }
   return (
@@ -20,9 +19,7 @@ function App() {
       <h1>What to do....?</h1>
       <p>{advice}</p>
       <button onClick={getAdvice}>Fetch an idea</button>
-
     </div>
-
   );
 }
 

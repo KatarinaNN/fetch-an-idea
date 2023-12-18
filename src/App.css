@@ -2,7 +2,6 @@ body{
   background-image: url("kids.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 .App{
   display: flex;
