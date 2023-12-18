@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
+body{
+  background-image: url("kids.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  margin-left: 70px;
 }
-
-.App-link {
-  color: #61dafb;
+h1, p{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 43px;
+  color: #194248;
+  background-color: rgba(240, 255, 255, 0.6);
+  border-radius: 10px;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+  font-size: 30px;
+}
+h1{
+  font-weight: lighter;
+}
+button{
+  font-family: 'Patrick Hand', cursive;
+  font-size: 25px;
+  color: #194248;
+  border-radius: 5px;
+  border: solid 3px #b56e78;
+  background-color: rgba(240, 255, 255, 0.9);
+  padding: 7px;
+}
+button:hover{
+  border: solid 3px #BE3144;
+  cursor: pointer;
+}
+@media all and (max-width: 500px){
+body{
+  background-image: url("cutedkids.jpg");
+  background-color: #B1C381;
+}
+.App{
+  margin-left: 60px;
+}
+h1{
+  font-size: 38px;
+}
+button{
+  font-size: 20px;
+  padding: 5px;
+}
 }
